@@ -2,6 +2,7 @@ package com.amirproject;
 
 import android.app.Application;
 
+import com.amirproject.DeviceInfo.DeviceInfoPackage;
 import com.amirproject.LaunchAndShare.LaunchAndSharePackage;
 import com.amirproject.Toast.ToastAmirPackage;
 import com.facebook.react.PackageList;
@@ -29,6 +30,7 @@ public class MainApplication extends Application implements ReactApplication {
           // Packages that cannot be autolinked yet can be added manually here, for example:
            packages.add(new ToastAmirPackage());
            packages.add(new LaunchAndSharePackage());
+           packages.add(new DeviceInfoPackage());
           return packages;
         }
 
